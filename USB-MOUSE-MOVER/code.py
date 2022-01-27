@@ -1,10 +1,3 @@
-# SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
-# SPDX-License-Identifier: MIT
-
-"""
-This test will initialize the display using displayio and draw a solid green
-background, a smaller purple rectangle, and some yellow text.
-"""
 import busio
 import board
 import digitalio
@@ -76,6 +69,7 @@ while button:
     DispPrint('' + str(counter))
     button = button_x.value
     led.value = False
+    
     try:
         mouse.move(x=10)
         mouse.move(x=-10)
