@@ -55,12 +55,11 @@ if button_x.value:
     import usb_cdc
     import usb_midi
     import usb_hid
-
     usb_hid.disable()                           # Disable all HID devices.
-    usb_hid.enable((usb_hid.Device.MOUSE,))     # Enable only mouse
     storage.disable_usb_drive()  # disable CIRCUITPY
     usb_cdc.disable()            # disable REPL
     usb_midi.disable()           # disable MIDI
+    usb_hid.enable((usb_hid.Device.MOUSE,))     # Enable only mouse
 else:
     DispPrint('Button X is pressed',FONTSCALE=2)
     # normal work
