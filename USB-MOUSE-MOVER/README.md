@@ -1,4 +1,4 @@
-**small project to emulate USB mouse moves on screen and disable screen-lock**
+**small project to emulate USB mouse moves on screen for disable screen-lock**
 - when X button is pressed while boot - board dont hide usb-storage and other usb devices ( possible edit files with Mu editor )
 - when X button is NOT pressed while boot - board hide usb-storage devices, only mouse is visible
 - when X button is pressed while work - board restarts
